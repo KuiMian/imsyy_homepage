@@ -73,8 +73,8 @@ const projectData = [
 // 计算网站链接
 const projectList = computed(() => {
   const result = [];
-  for (let i = 0; i < projectData.length; i += 4) {
-    const subArr = projectData.slice(i, i + 4);
+  for (let i = 0; i < projectData.length; i += 2) {
+    const subArr = projectData.slice(i, i + 2);
     result.push(subArr);
   }
   return result;
